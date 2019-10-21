@@ -1,5 +1,6 @@
 {
   "name": "gearswap",
   "private": true,
+  "proxy": "https://localhost:3001",
   "dependencies": {}
 }

@@ -35,11 +35,22 @@ gem 'mini_magick', '~> 4.8'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# App Start Management
 gem 'foreman'
+
+# Serializer
+gem 'active_model_serializers'
+
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+gem 'rack-cors'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Pry for Rails
   gem 'pry-rails'
+  # DB Seed Helper
+  gem 'faker', require: false
 end
 
 group :development do
